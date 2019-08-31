@@ -5,6 +5,7 @@ import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runti
 import notebook from "https://api.observablehq.com/@nitaku/dashboard-example.js";
 
 const renders = {
+  "preview": "#preview",
   "infobox": "#infobox"
 };
 Runtime.load(notebook, (variable) => {
