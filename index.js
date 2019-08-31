@@ -6,7 +6,8 @@ import notebook from "https://api.observablehq.com/@nitaku/dashboard-example.js"
 
 const renders = {
   "preview": "#preview",
-  "infobox": "#infobox"
+  "infobox": "#infobox",
+  "color": "#color"
 };
 Runtime.load(notebook, (variable) => {
   const selector = renders[variable.name];
