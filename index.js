@@ -2,10 +2,10 @@
 import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
 
 // Your notebook, compiled as an ES module.
-import notebook from "https://api.observablehq.com/@nitaku/cnr.js";
+import notebook from "https://api.observablehq.com/@nitaku/dashboard-example.js";
 
 const renders = {
-  "map": "#preview"
+  "preview": "#preview"
 };
 Runtime.load(notebook, (variable) => {
   const selector = renders[variable.name];
