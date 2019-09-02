@@ -2,13 +2,10 @@
 import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
 
 // Your notebook, compiled as an ES module.
-import notebook from "https://api.observablehq.com/@nitaku/dashboard-example.js";
+import notebook from "https://api.observablehq.com/@nitaku/brushable-scatterplot-matrix.js";
 
 const renders = {
-  "preview": "#preview",
-  "infobox": "#infobox",
-  "bar_chart": "#bar_chart",
-  "viewof color": "#viewof_color"
+  "splom": "#splom"
 };
 Runtime.load(notebook, (variable) => {
   const selector = renders[variable.name];
