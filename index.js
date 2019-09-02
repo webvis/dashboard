@@ -5,7 +5,9 @@ import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runti
 import notebook from "https://api.observablehq.com/@nitaku/brushable-scatterplot-matrix.js";
 
 const renders = {
-  "splom": "#splom"
+  "splom": "#splom",
+  "bars": "#bars",
+  "table": "#table"
 };
 Runtime.load(notebook, (variable) => {
   const selector = renders[variable.name];
