@@ -7,7 +7,7 @@ import notebook from "https://api.observablehq.com/@nitaku/brushable-scatterplot
 const renders = {
   "splom": "#splom",
   "bars": "#bars",
-  "table": "#table"
+  "viewof table": "#table"
 };
 Runtime.load(notebook, (variable) => {
   const selector = renders[variable.name];
